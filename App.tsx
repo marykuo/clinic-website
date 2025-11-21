@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomeView } from './components/HomeView';
-import { InfoView } from './components/InfoView';
+import { NewsView } from './components/NewsView';
+import { HoursView } from './components/HoursView';
+import { FaqView } from './components/FaqView';
+import { TransportView } from './components/TransportView';
 import { BookingForm } from './components/BookingForm';
 import { ViewState } from './types';
 
@@ -13,8 +16,14 @@ const App: React.FC = () => {
     switch (currentView) {
       case 'home':
         return <HomeView setView={setCurrentView} />;
-      case 'info':
-        return <InfoView />;
+      case 'news':
+        return <NewsView />;
+      case 'hours':
+        return <HoursView />;
+      case 'faq':
+        return <FaqView />;
+      case 'transport':
+        return <TransportView />;
       case 'booking':
         return <BookingForm />;
       default:

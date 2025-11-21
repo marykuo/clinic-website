@@ -1,4 +1,4 @@
-import { NewsItem, OpeningHours } from './types';
+import { NewsItem, OpeningHours, FaqItem } from './types';
 
 export const PRIMARY_COLOR = '#0860DC';
 
@@ -34,4 +34,23 @@ export const OPENING_HOURS: OpeningHours[] = [
   { day: '週五 (Fri)', hours: '09:00 - 12:00, 14:00 - 21:00' },
   { day: '週六 (Sat)', hours: '09:00 - 12:00' },
   { day: '週日 (Sun)', hours: '休診 (Closed)' },
+];
+
+export const FAQ_ITEMS: FaqItem[] = [
+  { 
+    q: '如何預約看診？', 
+    a: '您可以使用本網站的「線上預約」功能填寫資料，我們將有專人與您聯繫。或是於營業時間致電 (02) 2345-6789，由櫃檯人員為您安排。' 
+  },
+  { 
+    q: '初診需要攜帶什麼文件？', 
+    a: '請務必攜帶您的「健保卡」與「身分證」。若您有其他醫療院所的轉診單、檢驗報告或用藥紀錄，也建議一併攜帶供醫師參考。' 
+  },
+  { 
+    q: '診所有提供公費疫苗嗎？', 
+    a: '有的，本診所為公費流感疫苗合約院所。各類公費疫苗（如流感、肺炎鏈球菌等）施打資格與庫存狀況，請留意最新公告或來電洽詢。' 
+  },
+  { 
+    q: '看診過號了怎麼辦？', 
+    a: '若您過號，請告知櫃檯人員報到。我們將為您安排後續順位，原則上每兩位現場/預約號會穿插一位過號民眾，請耐心等候。' 
+  },
 ];

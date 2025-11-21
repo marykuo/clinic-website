@@ -32,7 +32,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setView }) => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
               <button
-                onClick={() => setView('info')}
+                onClick={() => setView('hours')}
                 className="px-8 py-3 rounded-lg bg-white text-gray-700 border border-gray-300 font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center"
               >
                 查看門診時間

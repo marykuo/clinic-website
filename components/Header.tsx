@@ -13,7 +13,10 @@ export const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
 
   const navItems: { id: ViewState; label: string }[] = [
     { id: 'home', label: '首頁' },
-    { id: 'info', label: '最新公告與時間' },
+    { id: 'news', label: '最新公告' },
+    { id: 'hours', label: '門診時間' },
+    { id: 'faq', label: '常見問題' },
+    { id: 'transport', label: '交通資訊' },
     { id: 'booking', label: '線上預約' },
   ];
 
@@ -39,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -57,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-500 hover:text-gray-900 focus:outline-none"
@@ -70,7 +73,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <button
