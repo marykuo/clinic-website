@@ -6,7 +6,7 @@ import { NewsView } from './components/NewsView';
 import { HoursView } from './components/HoursView';
 import { FaqView } from './components/FaqView';
 import { TransportView } from './components/TransportView';
-import { BookingForm } from './components/BookingForm';
+import { DoctorsView } from './components/DoctorsView';
 import { ViewState } from './types';
 
 const App: React.FC = () => {
@@ -24,8 +24,8 @@ const App: React.FC = () => {
         return <FaqView />;
       case 'transport':
         return <TransportView />;
-      case 'booking':
-        return <BookingForm />;
+      case 'doctors':
+        return <DoctorsView />;
       default:
         return <HomeView setView={setCurrentView} />;
     }

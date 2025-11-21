@@ -24,7 +24,6 @@ export const Footer: React.FC = () => {
           <p>&copy; {new Date().getFullYear()} {CLINIC_NAME}. All rights reserved.</p>
           <p className="mt-2">
             本網站僅供展示參考，不做任何醫療診斷用途。<br/>
-            Primary Color: <span style={{ color: PRIMARY_COLOR }}>{PRIMARY_COLOR}</span>
           </p>
         </div>
       </div>

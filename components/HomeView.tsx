@@ -24,11 +24,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ setView }) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
-                onClick={() => setView('booking')}
+                onClick={() => setView('doctors')}
                 className="px-8 py-3 rounded-lg text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center"
                 style={{ backgroundColor: PRIMARY_COLOR }}
               >
-                立即預約
+                認識醫師陣容
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
               <button

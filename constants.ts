@@ -1,4 +1,4 @@
-import { NewsItem, OpeningHours, FaqItem } from './types';
+import { NewsItem, OpeningHours, FaqItem, Doctor } from './types';
 
 export const PRIMARY_COLOR = '#0860DC';
 
@@ -39,7 +39,7 @@ export const OPENING_HOURS: OpeningHours[] = [
 export const FAQ_ITEMS: FaqItem[] = [
   { 
     q: '如何預約看診？', 
-    a: '您可以使用本網站的「線上預約」功能填寫資料，我們將有專人與您聯繫。或是於營業時間致電 (02) 2345-6789，由櫃檯人員為您安排。' 
+    a: '目前我們主要採現場掛號制，您可以先致電 (02) 2345-6789 詢問目前看診進度。' 
   },
   { 
     q: '初診需要攜帶什麼文件？', 
@@ -52,5 +52,75 @@ export const FAQ_ITEMS: FaqItem[] = [
   { 
     q: '看診過號了怎麼辦？', 
     a: '若您過號，請告知櫃檯人員報到。我們將為您安排後續順位，原則上每兩位現場/預約號會穿插一位過號民眾，請耐心等候。' 
+  },
+];
+
+export const MAIN_DOCTORS: Doctor[] = [
+  {
+    id: 1,
+    name: '林志豪 醫師',
+    title: '院長 / 家醫科專科醫師',
+    specialties: ['慢性病控制', '預防醫學', '家庭醫學', '一般內科'],
+    image1: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400&h=500', // Professional
+    image2: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400&h=500', // Casual/Action
+  },
+  {
+    id: 2,
+    name: '陳怡君 醫師',
+    title: '副院長 / 小兒科專科醫師',
+    specialties: ['小兒過敏氣喘', '生長發育評估', '嬰幼兒健檢', '一般兒科'],
+    image1: 'https://images.unsplash.com/photo-1594824476969-51c4475e6d31?auto=format&fit=crop&q=80&w=400&h=500',
+    image2: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400&h=500',
+  },
+  {
+    id: 3,
+    name: '張偉德 醫師',
+    title: '主治醫師 / 耳鼻喉科',
+    specialties: ['過敏性鼻炎', '鼻竇炎治療', '中耳炎', '眩暈治療'],
+    image1: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400&h=500',
+    image2: 'https://images.unsplash.com/photo-1612531386530-97286d74c2ea?auto=format&fit=crop&q=80&w=400&h=500',
+  },
+  {
+    id: 4,
+    name: '黃淑芬 醫師',
+    title: '主治醫師 / 皮膚科',
+    specialties: ['一般皮膚病', '醫學美容', '青春痘治療', '雷射治療'],
+    image1: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=400&h=500',
+    image2: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=400&h=500',
+  },
+];
+
+export const VISITING_DOCTORS: Doctor[] = [
+  {
+    id: 5,
+    name: '吳孟修 醫師',
+    title: '特約醫師 / 骨科',
+    specialties: ['運動傷害', '關節炎', '骨質疏鬆'],
+    image1: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=400&h=500',
+    image2: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&q=80&w=400&h=500',
+  },
+  {
+    id: 6,
+    name: '劉心語 醫師',
+    title: '特約醫師 / 身心科',
+    specialties: ['睡眠障礙', '焦慮症', '自律神經失調'],
+    image1: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=400&h=500',
+    image2: 'https://images.unsplash.com/photo-1625498542602-6bfb30f63385?auto=format&fit=crop&q=80&w=400&h=500',
+  },
+  {
+    id: 7,
+    name: '王建宏 醫師',
+    title: '特約醫師 / 復健科',
+    specialties: ['肩頸痠痛', '下背痛', '姿勢矯正'],
+    image1: 'https://images.unsplash.com/photo-1612349317033-a633a5a2887f?auto=format&fit=crop&q=80&w=400&h=500',
+    image2: 'https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&q=80&w=400&h=500',
+  },
+  {
+    id: 8,
+    name: '趙子軒 醫師',
+    title: '特約醫師 / 營養門診',
+    specialties: ['體重管理', '糖尿病飲食', '三高飲食控制'],
+    image1: 'https://images.unsplash.com/photo-1637059281428-13b129d1f490?auto=format&fit=crop&q=80&w=400&h=500',
+    image2: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80&w=400&h=500',
   },
 ];

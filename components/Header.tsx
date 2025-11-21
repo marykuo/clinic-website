@@ -14,10 +14,10 @@ export const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
   const navItems: { id: ViewState; label: string }[] = [
     { id: 'home', label: '首頁' },
     { id: 'news', label: '最新公告' },
+    { id: 'doctors', label: '醫師團隊' },
     { id: 'hours', label: '門診時間' },
     { id: 'faq', label: '常見問題' },
     { id: 'transport', label: '交通資訊' },
-    { id: 'booking', label: '線上預約' },
   ];
 
   const handleNavClick = (view: ViewState) => {

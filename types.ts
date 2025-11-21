@@ -1,4 +1,4 @@
-export type ViewState = 'home' | 'news' | 'hours' | 'booking' | 'faq' | 'transport';
+export type ViewState = 'home' | 'news' | 'hours' | 'faq' | 'transport' | 'doctors';
 
 export interface NewsItem {
   id: number;
@@ -15,4 +15,14 @@ export interface OpeningHours {
 export interface FaqItem {
   q: string;
   a: string;
+}
+
+export interface Doctor {
+  id: number;
+  name: string;
+  title: string;
+  specialties: string[];
+  image1: string;
+  image2: string;
+  description?: string;
 }
